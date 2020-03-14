@@ -1,4 +1,4 @@
-package com.qifan.leboncointest.data.di.remote
+package com.qifan.leboncointest.data.album.di.remote
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder

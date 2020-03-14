@@ -9,9 +9,6 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
     }
 }
 
@@ -43,6 +40,7 @@ ext {
     mockito = "3.2.4"
     junitExt = "1.1.1"
     espresso = "3.2.0"
+    testCore = "1.2.0"
 }
 
 task clean(type: Delete) {

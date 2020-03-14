@@ -37,6 +37,9 @@ android {
         main.java.srcDirs += "src/main/kotlin"
     }
 
+    testOptions {
+        unitTests.includeAndroidResources = true
+    }
 }
 
 dependencies {
@@ -69,8 +72,10 @@ dependencies {
     implementation "org.koin:koin-androidx-viewmodel:$koin"
     implementation "org.koin:koin-androidx-fragment:$koin"
 
-    testImplementation "junit:junit:$juint"
+    //test
     testImplementation "org.koin:koin-test:$koin"
-    androidTestImplementation "androidx.test.ext:junit:$junitExt"
+    testImplementation "androidx.test:core:$testCore"
+    testImplementation "org.mockito:mockito-core:$mockito"
+    testImplementation "com.squareup.okhttp3:mockwebserver:$okhttp"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espresso"
 }

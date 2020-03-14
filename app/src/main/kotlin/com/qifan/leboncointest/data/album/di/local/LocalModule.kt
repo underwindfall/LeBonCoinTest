@@ -1,4 +1,4 @@
-package com.qifan.leboncointest.data.di.local
+package com.qifan.leboncointest.data.album.di.local
 
 import com.qifan.leboncointest.data.datasource.local.LeBonCoinDatabase
 import org.koin.android.ext.koin.androidApplication
