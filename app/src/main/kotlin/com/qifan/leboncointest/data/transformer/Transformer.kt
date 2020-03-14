@@ -1,4 +1,4 @@
-package com.qifan.leboncointest.data
+package com.qifan.leboncointest.data.transformer
 
 import com.qifan.leboncointest.data.datasource.local.AlbumLocalData
 import com.qifan.leboncointest.data.datasource.remote.AlbumApiData

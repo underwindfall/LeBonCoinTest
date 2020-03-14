@@ -4,6 +4,8 @@ import android.content.Context
 import com.qifan.leboncointest.data.datasource.local.AlbumDao
 import com.qifan.leboncointest.data.datasource.remote.LeBonCoinAlbumApi
 import com.qifan.leboncointest.data.params.NetworkParams
+import com.qifan.leboncointest.data.transformer.transformLocalDataToModel
+import com.qifan.leboncointest.data.transformer.transformRemoteDataToModel
 import com.qifan.leboncointest.domain.model.AlbumModel
 import com.qifan.leboncointest.domain.model.Results
 import com.qifan.leboncointest.domain.repository.GetAlbumRepository
