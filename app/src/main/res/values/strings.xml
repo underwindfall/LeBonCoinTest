@@ -1,3 +1,6 @@
 <resources>
 	<string name="app_name">LeBonCoinTest</string>
+    <string name="network_error">Something is wrong with internet</string>
+    <string name="empty_error">This is no data in this server</string>
+    <string name="general_error">Something is wrong, pls try agagin later</string>
 </resources>

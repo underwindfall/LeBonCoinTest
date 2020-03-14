@@ -6,15 +6,6 @@ import io.reactivex.Flowable
 import io.reactivex.Single
 import io.reactivex.disposables.Disposable
 
-//fun <T> Flowable<T>.subscribeError(errorNotifier: ErrorNotifier): Disposable = subscribe({}, { e ->
-//    logStreamError(e)
-//    errorNotifier.onReactiveError(e)
-//})
-//
-//fun <T> Single<T>.subscribeError(errorNotifier: ErrorNotifier): Disposable = subscribe({}, { e ->
-//    logStreamError(e)
-//    errorNotifier.onReactiveError(e)
-//})
 
 fun <T> Flowable<T>.subscribeAndLogError(): Disposable = subscribe({}, ::logStreamError)
 
