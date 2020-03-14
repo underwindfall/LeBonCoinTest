@@ -35,3 +35,13 @@ fun AlbumEntity.toModel(): AlbumModel {
         thumbnailUrl = thumbnailUrl
     )
 }
+
+
+fun List<AlbumLocalData>.toModel(): List<AlbumModel> {
+    return this
+        .map {
+            it.toEntity()
+                .toModel()
+        }
+
+}
